@@ -70,7 +70,7 @@ const App: React.FC = () => {
           </Routes>
         </main>
         <Footer />
-        <AudioPlayer src="./public/ammenarayanasong.mp3" />{" "}
+        <AudioPlayer src="/ammenarayanasong.mp3" />{" "}
         {/* Replace with actual temple audio */}
       </div>
     </HashRouter>
