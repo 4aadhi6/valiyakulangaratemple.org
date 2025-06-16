@@ -1,0 +1,5 @@
+/* In your main CSS file (e.g., index.css) */
+
+html {
+  scroll-behavior: smooth;
+}

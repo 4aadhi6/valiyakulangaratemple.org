@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dfkw8x3yf/image/upload/v1749972274/sdllgwdtwglmmsg9rm3x.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Valiyakulangara Devi Temple Application"
+    />
+    <link rel="stylesheet" href="App.css" />
+    <link
+      rel="apple-touch-icon"
+      href="https://res.cloudinary.com/dfkw8x3yf/image/upload/v1749972274/sdllgwdtwglmmsg9rm3x.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Valiyakulangara Devi Temple</title>
+    <style>
+      /* Global styles for animations */
+      @keyframes loading-bar {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      .animate-loading-bar {
+        animation: loading-bar 2.5s ease-out forwards;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .animate-marquee {
+        animation: marquee linear infinite;
+      }
+
+      @keyframes marquee2 {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      .animate-marquee2 {
+        animation: marquee2 linear infinite;
+      }
+
+      @keyframes modal-appear {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .animate-modal-appear {
+        animation: modal-appear 0.3s ease-out forwards;
+      }
+
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 1.5s ease-out forwards;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px) translateX(0px) rotate(0deg);
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-20px) translateX(10px) rotate(180deg);
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(0px) translateX(0px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+      .animate-float {
+        animation: float linear infinite;
+      }
+
+      @keyframes tilt {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-1deg);
+        }
+        75% {
+          transform: rotate(1deg);
+        }
+      }
+      .animate-tilt {
+        animation: tilt 10s infinite linear;
+      }
+      /* Add this to your global stylesheet (e.g., src/index.css) */
+
+      .marquee-container {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      .marquee-content {
+        display: inline-block;
+        /* Adjust duration to change speed: 20s is faster, 60s is slower */
+        animation: scroll-left 40s linear infinite;
+      }
+
+      /* This pauses the scroll when you hover over it */
+      .marquee-container:hover .marquee-content {
+        animation-play-state: paused;
+      }
+
+      /* The animation that moves the content */
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          /* This makes it loop seamlessly */
+          transform: translateX(-50%);
+        }
+      }
+      /* Custom font - Playfair Display (example if needed, typically configured in tailwind.config.js) */
+      /* For CDN, it's better to import in CSS or link in head if available on Google Fonts etc. */
+      /* Since tailwind.config.js is not an option here, this is a placeholder. */
+      /* Actual font usage relies on Tailwind's default sans/serif or specific font classes. */
+      /* The existing app seems to use 'font-playfair' which implies Tailwind is configured for it or it's a custom class. */
+      /* Assuming 'font-playfair' is handled by Tailwind's setup. */
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@^19.1.0",
+          "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+          "react/": "https://esm.sh/react@^19.1.0/",
+          "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+          "@google/genai": "https://esm.sh/@google/genai@^1.5.0",
+          "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

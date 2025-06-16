@@ -1,0 +1,21 @@
+
+{
+  "short_name": "TempleApp",
+  "name": "Valiyakulangara Devi Temple",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/templeicon192/192/192",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://picsum.photos/seed/templeicon512/512/512",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFA500",
+  "background_color": "#ffffff"
+}
