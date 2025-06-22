@@ -9,7 +9,7 @@ import Footer from "./components/common/Footer";
 import LoadingScreen from "./components/common/LoadingScreen";
 import ProtectedRoute from "./components/core/ProtectedRoute";
 import AudioPlayer from "./components/core/AudioPlayer";
-
+import "./App.css";
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const { theme } = useContext(AppContext);
