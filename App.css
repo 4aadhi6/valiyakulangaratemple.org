@@ -3,3 +3,48 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Light mode */
+body.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #111111;
+  color: #f1f1f1;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+body.dark .navbar {
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #f1f1f1;
+}
+
+/* Buttons */
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark button {
+  background-color: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+button:hover {
+  opacity: 0.9;
+}
